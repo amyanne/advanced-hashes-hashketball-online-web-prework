@@ -79,8 +79,11 @@ def player_stats(name)
     all_players << data[:players]
   end
   all_players.flatten!
-  all_players.each do |player|
-    if pla
+  all_players.each_with_index do |player, index|
+    if player[:player_name] == name
+      return all_players[index]
+    end
+  end
 end
 def big_shoe_rebounds
 end
