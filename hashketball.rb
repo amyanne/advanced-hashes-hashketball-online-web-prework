@@ -1,5 +1,6 @@
+require 'pry'
 def game_hash
-  hash = {
+  {
     :home => {
       :team_name => "Brooklyn Nets",
       :colors => "Black, White", 
@@ -21,6 +22,7 @@ def num_points_scored(player_name)
   end
   all_players.each do |player|
     if player[:player_name] == player_name
+      binding.pry
       player[:points]
     end
   end 
