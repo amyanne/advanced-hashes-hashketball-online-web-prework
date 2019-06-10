@@ -48,8 +48,7 @@ def team_colors(team)
     end
     
   end
- color_array 
- binding.pry
+ color_array.to_a
 end
 def team_names
 end
