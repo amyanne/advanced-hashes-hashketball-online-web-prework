@@ -63,7 +63,6 @@ def player_numbers(team_name)
     if team_info.has_value?(team)
       return team_info[:players].map { |player| player[:number]}
     end
-  end
 end
 end
 def player_stats(name)
