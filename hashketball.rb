@@ -20,7 +20,9 @@ def num_points_scored(player_name)
   game_hash.each do |team, data|
     all_players << data[:players]
   end
-  all_players.flatten.each do |player|
+  all_players.flatten!
+  all_players.each do |player|
+    binding.pry
     if player[:player_name] == player_name
       player[:points]
     end
