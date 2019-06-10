@@ -45,6 +45,7 @@ def team_colors(team)
     if game_hash[teams] = team
       return teams[:colors]
     end
+  end
   
 end
 def team_names
