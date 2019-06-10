@@ -35,6 +35,7 @@ def shoe_size(player_name)
   end
   all_players.flatten!
   all_players.each do |player|
+    binding.pry
     if player[:player_name] == player_name
       return player[:shoe]
     end
