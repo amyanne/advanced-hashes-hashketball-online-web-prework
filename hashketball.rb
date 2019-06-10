@@ -66,10 +66,15 @@ def player_numbers(team_name)
 end
 end
 def play_stats(name)
-  teams_ifo = 
   game_hash.values.each do |team_info|
     if team_info[:players].has_value?(name)
-      return team_info
+      team_info[:players].each do |player|
+        if player[:player_name] == name
+          return  player
+        end
+    end
+        
+        
 end
 
 def big_shoe_rebounds
