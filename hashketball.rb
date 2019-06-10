@@ -75,13 +75,14 @@ def player_numbers(team_name)
 end
 def player_stats(name)
   all_players = []
+  hash
   game_hash.each do |team, data|
     all_players << data[:players]
   end
   all_players.flatten!
   all_players.each_with_index do |player, index|
     if player[:player_name] == name
-      return all_players[index]
+      hash = all_players[index]
     end
   end
 end
