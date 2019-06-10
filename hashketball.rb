@@ -80,6 +80,7 @@ def player_stats(name)
   end
   all_players.flatten!
   all_players.each do |player|
+    binding.pry
     return player[:players]
   end
 end
