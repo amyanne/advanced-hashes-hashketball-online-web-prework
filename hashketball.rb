@@ -59,19 +59,12 @@ array
 end
 
 def player_numbers(team_name)
-   array = []
-   number = []
-   
-   game_hash.each do |teams, data|
-    if data[:team_name] == team_name
-        array.push(data)
-      end
+    game_hash.values.each do |team_info|
+    if team_info.has_value?(team)
+      return team_info[:players].map { |player| player[:number]}
+    end
   end
-  array.flatten!
-  array.each do |player|
-    number.push(player[:number])
-  end
-  number
+end
 end
 def player_stats(name)
   all_players = []
