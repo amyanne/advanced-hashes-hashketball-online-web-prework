@@ -80,7 +80,7 @@ def player_stats(name)
   end
   all_players.flatten!
   all_players.each do |player|
-    if 
+    if pla
 end
 def big_shoe_rebounds
 end
