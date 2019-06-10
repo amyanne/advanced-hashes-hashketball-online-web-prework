@@ -68,7 +68,6 @@ def player_numbers(team_name)
       end
   end
   array.each do |player|
-    binding.pry
     number.push(player[:number])
   end
   number
