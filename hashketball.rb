@@ -67,6 +67,7 @@ def player_numbers(team_name)
         array.push(data)
       end
   end
+  array.flatten!
   array.each do |player|
     number.push(player[:number])
   end
