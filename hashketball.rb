@@ -43,6 +43,7 @@ end
 def team_colors(team)
 
   game_hash.each do |teams, data|
+    binding.pry
     if teams == team 
       return ",,,"
     end
