@@ -54,8 +54,7 @@ def team_names
   array = []
   game_hash.do each |name, data|
   binding.pry
-  end
-end
+  
 end
 
 
