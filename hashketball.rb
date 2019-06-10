@@ -21,8 +21,8 @@ def num_points_scored(player_name)
     all_players << data[:players]
   end
   all_players.each do |player|
+   binding.pry
     if player[:player_name] == player_name
-      binding.pry
       player[:points]
     end
   end 
