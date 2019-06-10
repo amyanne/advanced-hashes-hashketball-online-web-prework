@@ -45,9 +45,8 @@ def team_colors(team)
   game_hash.each do |teams, data|
     team_array << data[:team_name]
     end
-    binding.pry
-    team_array.each do |index, teams|
-      if teams[:team_name] == teams
+    team_array.each do |teams|
+      if teams[:team_name] == team
         return teams[:colors]
       end
   end
