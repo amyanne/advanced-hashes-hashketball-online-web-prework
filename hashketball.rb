@@ -74,7 +74,14 @@ def player_numbers(team_name)
   number
 end
 def team_stats(name)
-  
+  all_players = []
+  game_hash.each do |team, data|
+    all_players << data[:players]
+  end
+  all_players.flatten!
+  all_players.each do |player|
+    return player[:players]
+  end
 end
 def big_shoe_rebounds
 end
