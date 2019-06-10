@@ -82,7 +82,7 @@ def player_stats(name)
   all_players.flatten!
   all_players.each_with_index do |player, index|
     if player[:player_name] == name
-      hash = all_players[index]
+      hash = Hash{all_players[index]
     end
   end
 end
