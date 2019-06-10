@@ -21,10 +21,11 @@ def num_points_scored(player_name)
   end
   all_players.each do |player|
     if player[:player_name] == player_name
-      
-  end
-end 
+      player[:points]
+    end
+  end 
 end
+
 def shoe_size
 end
 def team_colors
