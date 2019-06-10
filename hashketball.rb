@@ -15,15 +15,13 @@ def game_hash
   }
 end
 def num_points_scored(player_name)
+  all_players = []
   game_hash.each do |team, data|
-    data.each do |team_info, details|
-      if details.kind_of?(array)
-      details.each do |player, player_details|
-        if player_name = player
-          game_hash[team][data][team_info][details][points]
-      end
-    end
-    end
+    all_players << data[:players]
+  end
+  all_players.each do |player|
+    if player[:player_name] == player_name
+      
   end
 end 
 end
