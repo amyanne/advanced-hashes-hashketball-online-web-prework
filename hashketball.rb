@@ -44,6 +44,7 @@ def team_colors(team)
   game_hash.each do |teams, data|
     if game_hash[teams] == team
       return game_hash[teams][:colors]
+      binding.pry
     end
   end
   
