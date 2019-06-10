@@ -73,7 +73,8 @@ def player_numbers(team_name)
   end
   number
 end
-def team_stats
+def team_stats(name)
+  
 end
 def big_shoe_rebounds
 end
