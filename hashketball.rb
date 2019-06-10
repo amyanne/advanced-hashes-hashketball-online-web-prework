@@ -50,7 +50,7 @@ def team_colors(team)
   end
  color_array.split(", ")
 end
-def team_names
+def team_names(hhh)
   array = []
 game_hash.do each |name, data|
   array = data[:team_name]
