@@ -75,7 +75,7 @@ def player_numbers(team_name)
 end
 def player_stats(name)
   all_players = []
-  hash
+  hash = {}
   game_hash.each do |team, data|
     all_players << data[:players]
   end
