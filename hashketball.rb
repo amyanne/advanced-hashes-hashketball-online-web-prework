@@ -22,9 +22,8 @@ def num_points_scored(player_name)
   end
   all_players.flatten!
   all_players.each do |player|
-    binding.pry
     if player[:player_name] == player_name
-      player[:points]
+      return player[:points]
     end
   end 
 end
