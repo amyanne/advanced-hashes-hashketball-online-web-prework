@@ -16,7 +16,8 @@ def game_hash
 end
 def num_points_scored(player_name)
   game_hash.each do |team, data|
-    data.each do |
+    data.each do |team_info, details|
+      details.each do
 end
 def shoe_size
 end
