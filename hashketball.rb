@@ -73,7 +73,7 @@ def play_stats(name)
           return  player
         end
     end
-        
+      end
         
 end
 
