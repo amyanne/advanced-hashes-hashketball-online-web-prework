@@ -48,6 +48,7 @@ def team_colors(team)
     team_array.each do |teams|
       if teams[:team_name] == teams
         return teams[:colors]
+      end
   end
   
 end
