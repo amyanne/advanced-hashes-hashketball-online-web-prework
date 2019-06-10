@@ -47,7 +47,7 @@ def team_colors(team)
     end
     team_array.each do |teams|
       binding.pry
-      if teams[:team_name] == team
+      if teams == team
         return teams[:colors]
       end
   end
