@@ -63,7 +63,6 @@ def player_numbers(team_name)
    
    game_hash.each do |teams, data|
     if data[:team_name] == team_name
-      data.each do |team_info, players|
         array.push(data[:team_info])
         binding.pry
       end
