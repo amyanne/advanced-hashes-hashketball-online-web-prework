@@ -65,19 +65,7 @@ def player_numbers(team_name)
     end
 end
 end
-def player_stats(name)
-  all_players = []
-  hash = {}
-  game_hash.each do |team, data|
-    all_players << data[:players]
-  end
-  all_players.flatten!
-  all_players.each_with_index do |player, index|
-    if player[:player_name] == name
-      hash = Hash[*all_players
-    end
-  end
-end
+
 def big_shoe_rebounds
 end
 
