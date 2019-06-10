@@ -35,23 +35,18 @@ def shoe_size(player_name)
   end
   all_players.flatten!
   all_players.each do |player|
-    binding.pry
     if player[:player_name] == player_name
       return player[:shoe]
     end
   end 
 end
 def team_colors(team)
-  team_array =[]
+
   game_hash.each do |teams, data|
-    team_array << data[:team_name]
+    if teams == team 
+      return ",,,"
     end
-    team_array.flatten!
-    team_array.each do |teams|
     
-      if teams[:team_name] == team
-        return teams[:colors]
-      end
   end
   
 end
