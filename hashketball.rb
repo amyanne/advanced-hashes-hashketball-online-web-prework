@@ -17,7 +17,13 @@ end
 def num_points_scored(player_name)
   game_hash.each do |team, data|
     data.each do |team_info, details|
-      details.each do
+      details.each do |player|
+        if player_name = player
+          game_hash[team][data][team_info][details][points]
+      end
+    end
+  end
+end 
 end
 def shoe_size
 end
