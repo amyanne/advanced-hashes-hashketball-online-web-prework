@@ -44,7 +44,7 @@ def team_colors(team)
   team_array =[]
   game_hash.each do |teams, data|
     binding.pry
-    team_array << teams[:colors]
+    team_array << teams[:team_name]
     binding.pry
     end
     team_array.each do |teams|
