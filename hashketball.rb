@@ -66,7 +66,6 @@ def player_numbers(team_name)
         array.push(data[:team_info])
         binding.pry
       end
-    end
   end
   array
   
