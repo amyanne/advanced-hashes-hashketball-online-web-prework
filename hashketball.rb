@@ -60,13 +60,19 @@ end
 
 def player_numbers(team_name)
    array = []
+   number = []
    
    game_hash.each do |teams, data|
     if data[:team_name] == team_name
         array.push(data)
       end
   end
-  array
+  array.each do |player|
+    number.push(player[:number])
+  end
+  number
+    
+  
   
 end
 
