@@ -52,10 +52,10 @@ def team_colors(team)
 end
 def team_names
   array = []
-  game_hash.do each |name, data|
+game_hash.do each |name, data|
   array = data[:team_name]
   binding.pry
-end
+
 array
 end
 
