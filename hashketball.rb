@@ -36,7 +36,7 @@ def shoe_size(player_name)
   all_players.flatten!
   all_players.each do |player|
     if player[:player_name] == player_name
-      return player[:shoe_size]
+      return player[:shoe]
     end
   end 
 end
