@@ -70,7 +70,7 @@ def player_stats(name)
     if team_info.has_value?(name)
       team_info[:players].each do |player|
         if player[:player_name] == name
-          player.delete
+          player.delete(:player_name)
           return  player
         end
     end
