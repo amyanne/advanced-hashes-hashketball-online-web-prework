@@ -48,7 +48,7 @@ def team_colors(team)
     end
     
   end
- color_array.to_a
+ color_array.split(",")
 end
 def team_names
 end
